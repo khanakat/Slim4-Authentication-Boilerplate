@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block meta %} {% endblock %}
+    <title>{% block title %} {% endblock %}</title>
+    <meta name="description" content="Tantra Online Neo Oriental Fantasy 3D MMORPG">
+    <meta name="keywords" content="Tantra, Tantra Online, MMORPG, Kathana, K3, K4, K5, Neo Oriental Fantasy">
+    <meta name="author" content="Fernando Calmet">
+    <link rel="icon" href="/assets/img/logo.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <!-- Animated CSS -->
+    <link rel="stylesheet" href="/assets/css/animate.min.css">
+    <!-- compiled CSS -->
+    <link rel="stylesheet" href="/assets/css/app.css">
+    {% block stylesheets %} {% endblock %}
+</head>
+<body>
+    <div id="app">
+        {% include 'layouts/partials/nav.twig' %}
+
+        {% include 'layouts/partials/flash.twig' %}
+
+        {% block content %} {% endblock %}
+
+        {% include 'layouts/partials/footer.twig' %}
+    </div>
+    
+    <!-- bootstrap JS -->
+    <script src="/assets/libs//jquery.min.js"></script>
+    <script src="/assets/libs/popper.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <!-- compiled JS -->
+    <script src="/assets/js/app.js"></script>
+    {% block scripts %} {% endblock %}
+</body>
+</html>
