@@ -1,4 +1,5 @@
-# Aplicación Boilerplate Slim4 + Authentications + Migrations + SQL
+# Aplicación Boilerplate Slim4 + Authentications + Migrations
+
 > Autor : Fernando Calmet  
 https://github.com/fernandocalmet  
 
@@ -20,6 +21,7 @@ https://github.com/fernandocalmet
 8. Run the application with the command `composer start`.
 
 ## Includes
+
 - Dependency Injection
 - Twig templates
 - Eloquent ORM
@@ -30,7 +32,8 @@ https://github.com/fernandocalmet
 - Config helper
 - Symfony var dumper
 
-## Depedencies
+## Dependencies
+
 - slim/slim
 - slim/psr-7
 - slim/twig-view
