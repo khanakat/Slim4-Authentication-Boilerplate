@@ -1,7 +1,7 @@
 {
-  "name": "slim3",
-  "version": "1.0.0",
-  "description": "Slim3 boilerplate",
+  "name": "slim4",
+  "version": "1.1.0",
+  "description": "Slim4 boilerplate",
   "main": "webpack.mix.js",
   "scripts": {
     "dev": "node node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/fritsvt/slim3-auth-boilerplate"
+    "url": "https://github.com/khanakat/Slim4-Authentication-Boilerplate"
   },
-  "author": "Frits van Turnhout",
+  "author": "Fernando Calmet",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fritsvt/slim3-auth-boilerplate/issues"
+    "url": "https://github.com/khanakat/Slim4-Authentication-Boilerplate/issues"
   },
-  "homepage": "https://gitlab.com/frits/assie#README",
+  "homepage": "https://github.com/FernandoCalmet",
   "devDependencies": {
     "cross-env": "^5.1",
     "laravel-mix": "^4.0.7",

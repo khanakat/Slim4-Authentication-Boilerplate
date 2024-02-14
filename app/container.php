@@ -31,7 +31,9 @@ return [
         return new Messages();
     },
     Twig::class => function (ContainerInterface $c) {
-        $twig = new Twig(__DIR__.'/../resources/views', [
+        $loader = new \Twig\Loader\FilesystemLoader(__DIR__.'/../resources/views');
+        
+        $twig = new Twig($loader, [
             'cache' => (new App\Helpers\Config())->get('production') === true ? __DIR__ . '/../resources/cache/views' : false,
             'debug' => (new App\Helpers\Config())->get('production') !== true
         ]);
@@ -40,12 +42,10 @@ return [
             'check' => $c->get(Auth::class)->check(),
             'user' => $c->get(Auth::class)->user(),
         ]);
-
         $twig->getEnvironment()->addGlobal('flash', $c->get(Messages::class));
-
         $twig->addExtension(new \App\Views\DebugExtension);
         $twig->addExtension(new \App\Views\ConfigExtension);
-
+    
         return $twig;
-    }
+    }    
 ];

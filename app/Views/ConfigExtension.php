@@ -1,21 +1,17 @@
 <?php
-/**
- * Slim Framework (http://slimframework.com)
- *
- * @link      https://github.com/slimphp/Twig-View
- * @copyright Copyright (c) 2011-2015 Josh Lockhart
- * @license   https://github.com/slimphp/Twig-View/blob/master/LICENSE.md (MIT License)
- */
+
 namespace App\Views;
 
 use App\Helpers\Config;
+use Twig\Extension\AbstractExtension;
+use Twig\TwigFunction;
 
-class ConfigExtension extends \Twig_Extension
+class ConfigExtension extends AbstractExtension
 {
     public function getFunctions()
     {
         return [
-            new \Twig_SimpleFunction('config', [$this, 'config'])
+            new TwigFunction('config', [$this, 'config'])
         ];
     }
 
